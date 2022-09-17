@@ -102,7 +102,7 @@ nav {
 
 
 main {
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -111,10 +111,20 @@ main {
     width: 100%;
 }
 
+.slider {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#slide {
+    height: auto;
+    width: 100%;
+}
+
 section {
     display: block;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .subTitle h3 {
@@ -283,7 +293,7 @@ footer {
 }
 
 
-/* - - STYKING - - */
+/* - - STYLING - - */
 
 
 .logo-comb img:hover,
@@ -309,6 +319,10 @@ nav a {
 
 
 @media screen and (min-width: 50em) {
+    main {
+        max-width: 85%;
+    }
+
     header {
         width: 100%;
         display: flex;
@@ -336,8 +350,28 @@ nav a {
         border: none;
     }
 
+    .slider {
+        margin-top: 2rem;
+    }
+
+    #slide {
+        border-radius: 0.5rem;
+        box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    }
+
+    .first-section,
+    .second-section,
+    .third-section {
+        border-radius: 0.5rem;
+        box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    }
+
     .note {
         font-size: 1.3rem;
+    }
+
+    .container-tabel {
+        padding: 0.5rem;
     }
 
     .content-table {
@@ -346,6 +380,10 @@ nav a {
 }
 
 @media screen and (min-width: 70rem) {
+    main {
+        max-width: 900px;
+    }
+
     hr {
         display: none;
     }
@@ -376,7 +414,7 @@ nav a {
     }
 
     .sideimg img {
-        width: 25rem;
+        width: 20rem;
         height: auto;
     }
 
@@ -416,7 +454,6 @@ nav a {
     .first-section,
     .second-section,
     .third-section {
-        width: 90%;
         margin: auto;
         margin-top: 3.5rem;
         margin-bottom: 3.5rem;
