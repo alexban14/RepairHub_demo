@@ -289,6 +289,18 @@ textarea.invalid {
     font-size: 1.7rem;
 }
 
+.feedback > a > button {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    background: #fff;
+    border: none;
+    color: #36bac9;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 0.4rem;
+}
+
 /* .form-control small {
     visibility: hidden;
     bottom: 0;
@@ -388,6 +400,16 @@ button:hover {
     border: 0.1rem solid black;
     border-radius: 0.4rem;
     box-shadow: 0 0.5em 0.5em -0.4em #36bac9;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.feedback > a > button:hover {
+    background-color: black;
+    color: #fff;
+    border: 0.1rem solid #fff;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.5em 0.5em -0.4em black;
     transform: translateY(-0.25em);
     cursor: pointer;
 }
