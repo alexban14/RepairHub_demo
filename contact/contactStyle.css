@@ -225,6 +225,10 @@ form textarea {
     text-align: center;
 }
 
+.form-control {
+    padding: 0.6rem;
+}
+
 form input,
 form label,
 form textarea {
@@ -250,6 +254,62 @@ form button {
     width: 80%;
     border-radius: 0.4rem;
 }
+
+input.invalid {
+    border: 0.2rem solid #900;
+    background-color: #fdd;
+}
+
+textarea.invalid {
+    border: 0.2rem solid #900;
+    background-color: #fdd;
+}
+
+.error {
+    padding: 0.2rem;
+    font-family: 'Play', serif;
+    color: #900;
+}
+
+.hidden {
+    display: none;
+}
+
+.feedback {
+    padding: 0.6rem;
+    background-color: #36bac9;
+    color: #fff;
+    width: 80%;
+    margin: auto;
+    border-radius: 0.4rem;
+}
+
+.feedback p {
+    padding: 0.6rem;
+    font-size: 1.7rem;
+}
+
+/* .form-control small {
+    visibility: hidden;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small {
+    font-family: 'Play', serif;
+    visibility: visible;
+    color: #900;
+}
+
+/* This is our style for the invalid fields
+.form-control.error input {
+    border: 0.2rem solid #900;
+    background-color: #fdd;
+}
+
+.form-control.success input {
+    border: 0.2rem solid #7CFC00;
+} */
 
 
 /* - - FOOTER - - */

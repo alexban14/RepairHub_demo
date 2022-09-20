@@ -18,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play&family=Spectral+SC&display=swap" rel="stylesheet">
+    <script src="/contact/contact_script.js" defer></script>
+    <!-- <script src="/contact/contact_script2.js" defer></script> -->
 </head>
 
 <body>
@@ -71,19 +73,43 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2781.63922981964!2d24.147890165531816!3d45.798454979106225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x474c679152e97b75%3A0xf4663030ea2f7635!2sButoiul%20de%20Aur%2C%20Sibiu!3m2!1d45.7979428!2d24.149411399999998!4m5!1s0x474c67966256b8b5%3A0x23d99a46130d8c33!2sStrada%209%20Mai%2017%2C%20Sibiu%20550201!3m2!1d45.7999782!2d24.1519554!5e0!3m2!1sro!2sro!4v1659434483202!5m2!1sro!2sro" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="data-form">
-                <form>
-                    <label for="name-input">Nume:</label>
-                    <input type="text" name="name" id="name-input">
-                    <label for="forname-input">Prenume:</label>
-                    <input type="text" name="forname" id="forname-input ">
-                    <label for="email-input">Email:</label>
-                    <input type="email" name="email" id="email-input">
-                    <label for="subject-input">Subiect:</label>
-                    <input type="text" name="subject" id="subject-input">
-                    <label for="message-input">Mesaj:</label>
-                    <textarea name="message" id="message-input" cols="30" rows="10"></textarea>
+                <form id="form" class="form" novalidate>
+                    <div class="form-control">
+                        <label for="name-input">Nume:</label>
+                        <input type="text" name="name" id="name-input">
+                        <div class="error hidden">Completati casuta cu numele dumneavoastra.</div>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="forname-input">Prenume:</label>
+                        <input type="text" name="forname" id="forname-input ">
+                        <div class="error hidden">Completati casuta cu prenumele dumneavoastra.</div>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="email-input">Email:</label>
+                        <input type="email" name="email" id="email-input">
+                        <div class="error hidden">Adaugati un email valid.</div>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="subject-input">Subiect:</label>
+                        <input type="text" name="subject" id="subject-input">
+                        <div class="error hidden">Adaugati un subiect measajului dumneavoastra.</div>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="message-input">Mesaj:</label>
+                        <textarea name="message" id="message-input" cols="30" rows="10"></textarea>
+                        <div class="error hidden">Va rugam completati si cu measajul pe care doriti sa ni-l adresati.</div>
+                    </div>
                     <button>Trimite</button>
                 </form>
+                <div class="feedback hidden">
+                    <p>Formularul a fost trimis cu sucess.</p>
+                    <p>Va multumim pentru mesajul trimis.</p>
+                    <p>O sa va contactam in cel mai scurt timp.</p>
+                </div>
             </div>
         </section>
 
