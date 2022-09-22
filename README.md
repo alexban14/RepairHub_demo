@@ -1,5 +1,22 @@
-~ A simple landing page of a Romanian GSM repair shop ~
 
--I was assigned to do this landing page as a coding project for a company's training program.
+# RepairHub
 
--The page contains plain CSS and HTML.
+A basic landing page for service GSM repair shop.
+
+
+
+## Langues used
+HTML5, CSS3, vanila JavaScript
+## API Reference
+
+#### Get all items
+
+```http
+openweathermap.org/api
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+
+
