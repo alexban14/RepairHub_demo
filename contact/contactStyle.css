@@ -75,7 +75,7 @@ header {
 .logo {
     margin: 0;
     padding: 0;
-    height: 3rem;
+    height: 2rem;
     width: auto;
 }
 
@@ -382,9 +382,8 @@ footer {
 /* - - STYKING - - */
 
 
-.logo-comb img:hover,
-.logo-comb h2:hover,
-nav a:hover {
+.logo:hover,
+.navTxt:hover {
     background-color: #fff;
     color: #36bac9;
     border: 0.1rem solid black;
@@ -414,9 +413,8 @@ button:hover {
     cursor: pointer;
 }
 
-.logo-comb img,
-.logo-comb h2,
-nav a,
+.logo,
+.navTxt,
 button {
     transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }

@@ -9,9 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RepairHub - GSM Shop</title>
     <link rel="icon" href="/assets/logoRepairHub.jpg">
+    <!-- bstrap stylesheet -->
+    <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <!-- stylesheet -->
     <link rel="stylesheet" href="/our-work/aboutStyle.css">
+    <!-- font awseome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
@@ -19,13 +23,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play&family=Spectral+SC&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/328449b9de.js" crossorigin="anonymous"></script>
+    <!-- bstrap script -->
+    <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- my script -->
     <script src="/our-work/about.js" defer></script>
 </head>
 
 <body>
     
     <header>
-        <div class="logo-comb">
+        <!--bstrap collapsable navbar -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid d-flex">
+                <div class="container d-flex align-items-center">
+                    <a class="navbar-brand" href="/home.html">
+                      <img src="/assets/logoRepairHub.jpg" alt="logo" class="logo">
+                    </a>
+                    <a class="navbar-brand fs-5 fw-bold navTxt" href="/home.html">RepairHub</a>
+                </div>
+                <div class="container jusitfy-content-end">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 fw-bold navTxt" aria-current="page" href="/our-work/about.html">Our Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 fw-bold navTxt" href="/contact/contact_us.html">Contacteaza-ne</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <div class="logo-comb">
             <a href="/home.html">
                 <img src="/assets/logoRepairHub.jpg" alt="logo" class="logo">
                 <h2>RepairHub</h2>
@@ -36,7 +65,7 @@
                 <li><a href="/our-work/about.html">Our work</a></li>
                 <li><a href="/contact/contact_us.html">Contacteaza-ne</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
 
@@ -81,7 +110,81 @@
 
         <section>
             <h3>Galerie foto</h3>
-            <div class="gallery">
+
+            <div id="carouselExampleControls" class="carousel slide w-50 m-auto mt-2 m-b2 p-2" data-bs-ride="carousel">
+                <div class="carousel-inner rounded-3 shadow-lg">
+                    <div class="carousel-item active">
+                      <img src="/assets/Gallery/backCracked.jpg" alt="crakced phone" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/assets/Gallery/thermalPaste.jpg" alt="thermal paste change" class="d-block w-100">
+                    </div>
+                    <!-- <div class="carousel-item">
+                      <img src="/assets/Gallery/brokenVent.jpg" alt="not woking vent" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/assets/Gallery/dsiplaySwap.jpg" alt="dsiplay repair" class="d-block w-100">
+                    </div> -->
+                    <div class="carousel-item">
+                      <img src="/assets/Gallery/iphoneRepair.jpg" alt="iphone repair" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/assets/Gallery/openPhone.jpg" alt="open phone" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/assets/Gallery/vents.jpg" alt="clean and dirty laptop vents" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- <div id="carouselExampleIndicators" class="carousel slide gallery" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/assets/Gallery/backCracked.jpg" alt="crakced phone" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/Gallery/thermalPaste.jpg" alt="thermal paste change" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/Gallery/brokenVent.jpg" alt="not woking vent" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/Gallery/dsiplaySwap.jpg" alt="dsiplay repair" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/Gallery/iphoneRepair.jpg" alt="iphone repair" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/Gallery/openPhone.jpg" alt="open phone" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/Gallery/vents.jpg" alt="clean and dirty laptop vents" class="d-block w-100">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div> -->
+
+            <!-- <div class="gallery">
                 <img src="/assets/Gallery/backCracked.jpg" alt="crakced phone">
                 <img src="/assets/Gallery/thermalPaste.jpg" alt="thermal paste change">
                 <img src="/assets/Gallery/brokenVent.jpg" alt="not woking vent">
@@ -89,7 +192,7 @@
                 <img src="/assets/Gallery/iphoneRepair.jpg" alt="iphone repair">
                 <img src="/assets/Gallery/openPhone.jpg" alt="open phone">
                 <img src="/assets/Gallery/vents.jpg" alt="clean and dirty laptop vents">
-            </div>
+            </div> -->
         </section>
 
     </main>

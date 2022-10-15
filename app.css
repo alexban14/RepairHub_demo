@@ -54,7 +54,6 @@ table {
 
 /* - - MOBILE VIEW - -*/
 
-
 header {
     background-color: #36bac9;
     color: #fff;
@@ -66,17 +65,17 @@ header {
 }
 
 .logo-comb h2 {
+    font-size: 1.3rem;
     align-self: center;
     margin: 0.3rem 0.5rem;
     padding: 0.5rem;
-    font-size: 1.3rem;
     font-weight: 600;
 }
 
 .logo {
     margin: 0;
     padding: 0;
-    height: 3rem;
+    height: 2rem;
     width: auto;
 }
 
@@ -97,6 +96,7 @@ header a {
 nav {
     border-bottom: 2px solid #fff;
 }
+
 
 /* - - MAIN CONTENT - - */
 
@@ -296,9 +296,10 @@ footer {
 /* - - STYLING - - */
 
 
-.logo-comb img:hover,
-.logo-comb h2:hover,
-nav a:hover {
+/* .logo-comb img:hover,
+.logo-comb h2:hover, */
+.logo:hover,
+.navTxt:hover {
     background-color: #fff;
     color: #36bac9;
     border: 0.1rem solid black;
@@ -308,9 +309,8 @@ nav a:hover {
     cursor: pointer;
 }
 
-.logo-comb img,
-.logo-comb h2,
-nav a {
+.logo,
+.navTxt {
     transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 
@@ -324,7 +324,6 @@ nav a {
     }
 
     header {
-        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
